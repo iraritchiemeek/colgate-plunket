@@ -73,6 +73,17 @@ h1, h2, h3, p, li, ul, ol {
     font-family: 'Futura Light';
     width: 90%;
     top: 830px; }
+    .main__instruction-text--after-submit {
+      top: 840px; }
+  .main__after-submit-image {
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 700px;
+    left: 400px;
+    background-image: url("../imgs/icons/prizes.png");
+    background-size: contain; }
 
 .header {
   z-index: 2;
@@ -172,28 +183,61 @@ h1, h2, h3, p, li, ul, ol {
     border-radius: 4px;
     width: 235px;
     background-color: #7AC143; }
-    .comp__upload:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 50%;
-      width: 1px;
-      background-color: white; }
+    .comp__upload--after-submit {
+      width: 350px; }
   .comp__upload-button {
-    width: 50%;
     height: 100%;
     float: left;
-    background-image: url("../imgs/icons/camera.png");
     background-position: center;
     background-size: 70%;
     background-repeat: no-repeat;
     cursor: pointer; }
     .comp__upload-button--photo {
+      width: 50%;
       background-image: url("../imgs/icons/camera.png"); }
+      .comp__upload-button--photo:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50%;
+        width: 1px;
+        background-color: white; }
     .comp__upload-button--video {
+      width: 50%;
       background-image: url("../imgs/icons/video.png"); }
+    .comp__upload-button--twitter {
+      width: 33.333%;
+      background-image: url("../imgs/icons/twitter.png"); }
+      .comp__upload-button--twitter:after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+        left: 100%;
+        height: 50%;
+        width: 1px;
+        background-color: white; }
+    .comp__upload-button--facebook {
+      width: 33.333%;
+      background-image: url("../imgs/icons/facebook.png"); }
+      .comp__upload-button--facebook:after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+        left: 100%;
+        height: 50%;
+        width: 1px;
+        background-color: white; }
+    .comp__upload-button--email {
+      width: 33.333%;
+      background-image: url("../imgs/icons/email.png"); }
     .comp__upload-button:hover {
       opacity: 0.6; }
 

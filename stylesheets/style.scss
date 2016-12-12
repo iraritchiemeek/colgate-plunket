@@ -131,6 +131,19 @@ h1, h2, h3, p, li, ul, ol {
 		font-family: 'Futura Light';
 		width: 90%;
 		top: 830px;
+		&--after-submit {
+			top: 840px;
+		}
+	}
+	&__after-submit-image {
+		background-repeat: no-repeat;
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		top: 700px;
+		left: 400px;
+		background-image: url($img-path + 'icons/prizes.png');
+		background-size: contain;
 	}
 }
 
@@ -242,28 +255,63 @@ h1, h2, h3, p, li, ul, ol {
 		border-radius: 4px;
 		width: 235px;
 		background-color: $light-green;
-		&:after {
-			content: "";
-			@include center;
-			height: 50%;
-			width: 1px;
-			background-color: white;
+		&--after-submit {
+			width: 350px;
 		}
 	}
 	&__upload-button {
-		width: 50%;
 		height: 100%;
 		float: left;
-		background-image: url($img-path + 'icons/camera.png');
 		background-position: center;
 		background-size: 70%;
 		background-repeat: no-repeat;
 		cursor: pointer;
 		&--photo {
+			width: 50%;
 			background-image: url($img-path + 'icons/camera.png');
+			&:after {
+				content: "";
+				@include center;
+				height: 50%;
+				width: 1px;
+				background-color: white;
+			}
 		}
 		&--video {
+			width: 50%;
 			background-image: url($img-path + 'icons/video.png');
+		}
+		&--twitter {
+			width: 33.333%;
+			background-image: url($img-path + 'icons/twitter.png');
+			&:after {
+				display: inline-block;
+				content: "";
+				@include center-vertical;
+				position: relative;
+				left: 100%;
+				height: 50%;
+				width: 1px;
+				background-color: white;
+			}
+		}
+		&--facebook {
+			width: 33.333%;
+			background-image: url($img-path + 'icons/facebook.png');
+			&:after {
+				display: inline-block;
+				content: "";
+				@include center-vertical;
+				position: relative;
+				left: 100%;
+				height: 50%;
+				width: 1px;
+				background-color: white;
+			}
+		}
+		&--email {
+			width: 33.333%;
+			background-image: url($img-path + 'icons/email.png');
 		}
 		&:hover {
 			opacity: 0.6;
