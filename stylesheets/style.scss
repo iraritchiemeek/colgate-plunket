@@ -3,17 +3,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @font-face {
-    font-family: 'Futura Light';
-    src: url('../fonts/Futura (Light).ttf'); }
+    font-family: 'Gill Light';
+    src: url('../fonts/GillSanLig.ttf'); 
+}
 @font-face {
-	font-family: 'Harriet Regular';
-	src: url('../fonts/Harriet Display Regular.otf'); }
-@font-face {
-	font-family: 'Harriet Bold';
-	src: url('../fonts/Harriet Display Bold.otf'); }
-
-$body-font: 'Futura Light';
-$header-font: 'Harriet Bold';
+	font-family: 'Gill Bold';
+	src: url('../fonts/GillSanBol.ttf'); 
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////VARIABLES///////////////////////////////////////////////////////////////////////////////////////////
@@ -65,6 +61,7 @@ html, body, header, main, .ng-scope {
 	margin: 0 0 0 0;
 	height: 100%;
 	width: 100%;
+	color: white;
 }
 
 h1, h2, h3, p, li, ul, ol {
@@ -105,7 +102,6 @@ h1, h2, h3, p, li, ul, ol {
 		top: 515px;
 		width: 370px;
 		height: 325px;
-		margin-left: 20px;
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -137,6 +133,29 @@ h1, h2, h3, p, li, ul, ol {
 	}
 }
 
+.footer {
+	position: absolute;
+	top: 1040px;
+	height: 50px;
+	width: 100%;
+	font-family: 'Gill Light';
+	&__legal {
+		line-height: 50px;
+		display: inline-block;
+		margin: 0 0 0 40px;
+	}
+	&__nzda-logo {
+		@include center-vertical;
+		position: absolute;
+		background-image: url($img-path + '/logos/nzda.jpg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		right: 20px;
+		height: 100%;
+		width: 100px;
+	}
+}
 
 
 
