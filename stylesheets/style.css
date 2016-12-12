@@ -5,12 +5,27 @@
   font-family: 'Gill Bold';
   src: url("../fonts/GillSanBol.ttf"); }
 @font-face {
-  font-family: 'Futura Light';
-  src: url("../fonts/Futura (Light).ttf"); }
+  font-family: 'Open Sans Bold';
+  src: url("../fonts/OpenSans-Bold.ttf"); }
+@font-face {
+  font-family: 'Open Sans Light';
+  src: url("../fonts/OpenSans-Light.ttf"); }
+@font-face {
+  font-family: 'Gotham Bold';
+  src: url("../fonts/Gotham-Bold.ttf"); }
+@font-face {
+  font-family: 'Gotham Light';
+  src: url("../fonts/Gotham-Light.ttf"); }
+@font-face {
+  font-family: 'Mank Sans';
+  src: url("../fonts/MankSans.ttf"); }
+@font-face {
+  font-family: 'Mank Sans Medium';
+  src: url("../fonts/MankSans-Medium.ttf"); }
 html, body, header, main, .ng-scope {
   margin: 0 0 0 0;
-  height: 100%;
   width: 100%;
+  height: 1110px;
   color: white; }
 
 h1, h2, h3, p, li, ul, ol {
@@ -19,9 +34,9 @@ h1, h2, h3, p, li, ul, ol {
 
 .inner-container {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  top: -70px;
   background-color: #0AA600;
   width: 810px;
   height: 1110px; }
@@ -54,7 +69,7 @@ h1, h2, h3, p, li, ul, ol {
     background-position: center;
     background-repeat: no-repeat; }
   .main__info-text {
-    font-family: 'Futura Light';
+    font-family: 'Open Sans Light';
     position: absolute;
     font-size: 1.3em;
     top: 585px;
@@ -64,13 +79,13 @@ h1, h2, h3, p, li, ul, ol {
     .main__info-text h1 {
       margin: 0 0 10px 0; }
     .main__info-text b {
-      font-family: 'Futura'; }
+      font-family: 'Open Sans Bold'; }
   .main__instruction-text {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.95em;
-    font-family: 'Futura Light';
+    font-family: 'Open Sans Light';
     width: 90%;
     top: 830px; }
     .main__instruction-text--after-submit {
@@ -113,7 +128,7 @@ h1, h2, h3, p, li, ul, ol {
   top: 1040px;
   height: 50px;
   width: 100%;
-  font-family: 'Futura Light'; }
+  font-family: 'Open Sans Light'; }
   .footer__legal {
     font-size: 0.9em;
     line-height: 50px;

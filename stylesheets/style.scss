@@ -11,8 +11,28 @@
 	src: url('../fonts/GillSanBol.ttf'); 
 }
 @font-face {
-	font-family: 'Futura Light';
-	src: url('../fonts/Futura (Light).ttf'); 
+	font-family: 'Open Sans Bold';
+	src: url('../fonts/OpenSans-Bold.ttf'); 
+}
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('../fonts/OpenSans-Light.ttf'); 
+}
+@font-face {
+	font-family: 'Gotham Bold';
+	src: url('../fonts/Gotham-Bold.ttf'); 
+}
+@font-face {
+	font-family: 'Gotham Light';
+	src: url('../fonts/Gotham-Light.ttf'); 
+}
+@font-face {
+	font-family: 'Mank Sans';
+	src: url('../fonts/MankSans.ttf'); 
+}
+@font-face {
+	font-family: 'Mank Sans Medium';
+	src: url('../fonts/MankSans-Medium.ttf'); 
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -63,8 +83,8 @@ $light-green: #7AC143;
 
 html, body, header, main, .ng-scope {
 	margin: 0 0 0 0;
-	height: 100%;
 	width: 100%;
+	height: 1110px;
 	color: white;
 }
 
@@ -74,13 +94,15 @@ h1, h2, h3, p, li, ul, ol {
 }
 
 .inner-container {
-	@include center;
+	@include center-horizontal;
+	top: -70px;
 	background-color: $dark-green;
 	width: 810px;
 	height: 1110px;
 }
 
 .main {
+	// margin: auto;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -111,7 +133,7 @@ h1, h2, h3, p, li, ul, ol {
 		background-repeat: no-repeat;
 	}
 	&__info-text {
-		font-family: 'Futura Light';
+		font-family: 'Open Sans Light';
 		position: absolute;
 		font-size: 1.3em;
 		top: 585px;
@@ -122,13 +144,13 @@ h1, h2, h3, p, li, ul, ol {
 			margin: 0 0 10px 0;
 		}
 		b {
-			font-family: 'Futura';
+			font-family: 'Open Sans Bold';
 		}
 	}
 	&__instruction-text {
 		@include center-horizontal;
 		font-size: 0.95em;
-		font-family: 'Futura Light';
+		font-family: 'Open Sans Light';
 		width: 90%;
 		top: 830px;
 		&--after-submit {
@@ -177,7 +199,7 @@ h1, h2, h3, p, li, ul, ol {
 	top: 1040px;
 	height: 50px;
 	width: 100%;
-	font-family: 'Futura Light';
+	font-family: 'Open Sans Light';
 	&__legal {
 		font-size: 0.9em;
 		line-height: 50px;
