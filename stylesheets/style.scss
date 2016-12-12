@@ -125,6 +125,13 @@ h1, h2, h3, p, li, ul, ol {
 			font-family: 'Futura';
 		}
 	}
+	&__instruction-text {
+		@include center-horizontal;
+		font-size: 0.95em;
+		font-family: 'Futura Light';
+		width: 90%;
+		top: 830px;
+	}
 }
 
 .header {
@@ -183,7 +190,7 @@ h1, h2, h3, p, li, ul, ol {
 
 .comp {
 	@include center-horizontal;
-	top: 860px;
+	top: 880px;
 	width: 90%;
 	height: 95px;
 	::-webkit-input-placeholder {

@@ -65,6 +65,14 @@ h1, h2, h3, p, li, ul, ol {
       margin: 0 0 10px 0; }
     .main__info-text b {
       font-family: 'Futura'; }
+  .main__instruction-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.95em;
+    font-family: 'Futura Light';
+    width: 90%;
+    top: 830px; }
 
 .header {
   z-index: 2;
@@ -120,7 +128,7 @@ h1, h2, h3, p, li, ul, ol {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 860px;
+  top: 880px;
   width: 90%;
   height: 95px; }
   .comp ::-webkit-input-placeholder {
