@@ -4,6 +4,9 @@
 @font-face {
   font-family: 'Gill Bold';
   src: url("../fonts/GillSanBol.ttf"); }
+@font-face {
+  font-family: 'Futura Light';
+  src: url("../fonts/Futura (Light).ttf"); }
 html, body, header, main, .ng-scope {
   margin: 0 0 0 0;
   height: 100%;
@@ -46,10 +49,22 @@ h1, h2, h3, p, li, ul, ol {
     position: absolute;
     top: 515px;
     width: 370px;
-    height: 325px;
+    height: 300px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat; }
+  .main__info-text {
+    font-family: 'Futura Light';
+    position: absolute;
+    font-size: 1.3em;
+    top: 585px;
+    left: 415px;
+    width: 290px;
+    height: 150px; }
+    .main__info-text h1 {
+      margin: 0 0 10px 0; }
+    .main__info-text b {
+      font-family: 'Futura'; }
 
 .header {
   z-index: 2;
@@ -79,22 +94,99 @@ h1, h2, h3, p, li, ul, ol {
   top: 1040px;
   height: 50px;
   width: 100%;
-  font-family: 'Gill Light'; }
+  font-family: 'Futura Light'; }
   .footer__legal {
+    font-size: 0.9em;
     line-height: 50px;
     display: inline-block;
     margin: 0 0 0 40px; }
+    .footer__legal span {
+      cursor: pointer;
+      margin: 0 30px 0 0; }
   .footer__nzda-logo {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
-    background-image: url("../imgs//logos/nzda.jpg");
+    background-image: url("../imgs//logos/nzda.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     right: 20px;
     height: 100%;
     width: 100px; }
+
+.comp {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 860px;
+  width: 90%;
+  height: 95px; }
+  .comp ::-webkit-input-placeholder {
+    opacity: 0.7;
+    color: white; }
+  .comp :-moz-placeholder {
+    /* Firefox 18- */
+    opacity: 0.7;
+    color: white; }
+  .comp ::-moz-placeholder {
+    /* Firefox 19+ */
+    opacity: 0.7;
+    color: white; }
+  .comp :-ms-input-placeholder {
+    opacity: 0.7;
+    color: white; }
+  .comp__form {
+    height: 100%;
+    width: 460px;
+    float: right; }
+    .comp__form input {
+      font-size: 0.8em;
+      color: white;
+      outline: none;
+      padding: 0 0 0 7px;
+      box-sizing: border-box;
+      background-color: #7AC143;
+      -webkit-appearance: none;
+      border: none;
+      border-radius: 4px;
+      height: 40px; }
+    .comp__form input[type="text"] {
+      width: calc(50% - 18px);
+      margin: 0 5px 0 5px; }
+    .comp__form input[type="email"] {
+      width: calc(100% - 20px);
+      margin: 15px 5px 0 5px; }
+  .comp__upload {
+    position: absolute;
+    height: 100%;
+    border-radius: 4px;
+    width: 235px;
+    background-color: #7AC143; }
+    .comp__upload:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 50%;
+      width: 1px;
+      background-color: white; }
+  .comp__upload-button {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url("../imgs/icons/camera.png");
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    .comp__upload-button--photo {
+      background-image: url("../imgs/icons/camera.png"); }
+    .comp__upload-button--video {
+      background-image: url("../imgs/icons/video.png"); }
+    .comp__upload-button:hover {
+      opacity: 0.6; }
 
 /*# sourceMappingURL=style.css.map */
