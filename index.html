@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="colgateApp">
+<head>
+	<title>Colgate</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js"></script><script src="https://apis.google.com/js/api.js"></script>
+	<script src="scripts/angular.js"></script>
+</head>
+<body ng-controller="mainController">
+	<div class="inner-container">
+		<div class="header">
+			<div class="header__logo header__logo--colgate"></div>
+			<div class="header__logo header__logo--plunket"></div>
+		</div>
+		<div ng-view></div>
+		<div class="footer">
+			<div class="footer__legal">
+				<span>Terms and Conditions</span>
+				<span>Privacy Policy</span>
+			</div>
+			<div class="footer__nzda-logo"></div>
+		</div>
+	</div>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'Futura Light';
+  src: url("../fonts/Futura (Light).ttf"); }
+@font-face {
+  font-family: 'Harriet Regular';
+  src: url("../fonts/Harriet Display Regular.otf"); }
+@font-face {
+  font-family: 'Harriet Bold';
+  src: url("../fonts/Harriet Display Bold.otf"); }
+html, body, header, main, .ng-scope {
+  margin: 0 0 0 0;
+  height: 100%;
+  width: 100%; }
+
+h1, h2, h3, p, li, ul, ol {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0; }
+
+.inner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0AA600;
+  width: 810px;
+  height: 1110px; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+  .main__top-image {
+    width: 100%;
+    height: 470px;
+    background-image: url("../imgs/backgrounds/baby.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .main__mid-image {
+    background-image: url("../imgs/backgrounds/flowers.png");
+    position: absolute;
+    top: 385px;
+    height: 120px;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat; }
+  .main__cursive-text {
+    background-image: url("../imgs/icons/Text.png");
+    position: absolute;
+    top: 515px;
+    width: 370px;
+    height: 325px;
+    margin-left: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+.header {
+  z-index: 2;
+  height: 265px;
+  width: 100%;
+  position: absolute; }
+  .header__logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+    .header__logo--colgate {
+      width: 430px;
+      height: 200px;
+      background-image: url("../imgs/logos/colgate.png"); }
+    .header__logo--plunket {
+      right: 0;
+      width: 300px;
+      height: 85px;
+      background-image: url("../imgs/logos/plunket.png"); }
+
+/*# sourceMappingURL=style.css.map */

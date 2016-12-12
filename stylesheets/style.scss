@@ -1,0 +1,149 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//FONTS/////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@font-face {
+    font-family: 'Futura Light';
+    src: url('../fonts/Futura (Light).ttf'); }
+@font-face {
+	font-family: 'Harriet Regular';
+	src: url('../fonts/Harriet Display Regular.otf'); }
+@font-face {
+	font-family: 'Harriet Bold';
+	src: url('../fonts/Harriet Display Bold.otf'); }
+
+$body-font: 'Futura Light';
+$header-font: 'Harriet Bold';
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////VARIABLES///////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$img-path: '../imgs/';
+$dark-green: #0AA600;
+$light-green: #7AC143;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//MIXINS////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin flex-wrapper {
+	padding: 0;
+	margin: 0;
+	display: -webkit-box;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	-ms-box-orient: horizontal;
+}
+
+@mixin center {
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin center-horizontal {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin center-vertical {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//STYLES////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+html, body, header, main, .ng-scope {
+	margin: 0 0 0 0;
+	height: 100%;
+	width: 100%;
+}
+
+h1, h2, h3, p, li, ul, ol {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+.inner-container {
+	@include center;
+	background-color: $dark-green;
+	width: 810px;
+	height: 1110px;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	&__top-image {
+		width: 100%;
+		height: 470px;
+		background-image: url($img-path + 'backgrounds/baby.jpg');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	&__mid-image {
+		background-image: url($img-path + 'backgrounds/flowers.png');
+		position: absolute;
+		top: 385px;
+		height: 120px;
+		width: 100%;
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	&__cursive-text {
+		background-image: url($img-path + 'icons/Text.png');
+		position: absolute;
+		top: 515px;
+		width: 370px;
+		height: 325px;
+		margin-left: 20px;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+.header {
+	z-index: 2;
+	height: 265px;
+	width: 100%;
+	position: absolute;
+	&__logo {
+		@include center-vertical;
+		position: absolute;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		&--colgate {
+			width: 430px;
+			height: 200px;
+			background-image: url($img-path + 'logos/colgate.png');
+		}
+		&--plunket {
+			right: 0;
+			width: 300px;
+			height: 85px;
+			background-image: url($img-path + 'logos/plunket.png');
+		}	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
