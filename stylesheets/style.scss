@@ -3,36 +3,12 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @font-face {
-    font-family: 'Gill Light';
-    src: url('../fonts/GillSanLig.ttf'); 
-}
-@font-face {
-	font-family: 'Gill Bold';
-	src: url('../fonts/GillSanBol.ttf'); 
-}
-@font-face {
 	font-family: 'Open Sans Bold';
 	src: url('../fonts/OpenSans-Bold.ttf'); 
 }
 @font-face {
 	font-family: 'Open Sans Light';
 	src: url('../fonts/OpenSans-Light.ttf'); 
-}
-@font-face {
-	font-family: 'Gotham Bold';
-	src: url('../fonts/Gotham-Bold.ttf'); 
-}
-@font-face {
-	font-family: 'Gotham Light';
-	src: url('../fonts/Gotham-Light.ttf'); 
-}
-@font-face {
-	font-family: 'Mank Sans';
-	src: url('../fonts/MankSans.ttf'); 
-}
-@font-face {
-	font-family: 'Mank Sans Medium';
-	src: url('../fonts/MankSans-Medium.ttf'); 
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,6 +75,7 @@ h1, h2, h3, p, li, ul, ol {
 	background-color: $dark-green;
 	width: 810px;
 	height: 1110px;
+	font-family: 'Open Sans Light';
 }
 
 .main {
@@ -133,7 +110,6 @@ h1, h2, h3, p, li, ul, ol {
 		background-repeat: no-repeat;
 	}
 	&__info-text {
-		font-family: 'Open Sans Light';
 		position: absolute;
 		font-size: 1.3em;
 		top: 585px;
@@ -150,7 +126,6 @@ h1, h2, h3, p, li, ul, ol {
 	&__instruction-text {
 		@include center-horizontal;
 		font-size: 0.95em;
-		font-family: 'Open Sans Light';
 		width: 90%;
 		top: 830px;
 		&--after-submit {
@@ -196,10 +171,9 @@ h1, h2, h3, p, li, ul, ol {
 
 .footer {
 	position: absolute;
-	top: 1040px;
+	top: 1050px;
 	height: 50px;
 	width: 100%;
-	font-family: 'Open Sans Light';
 	&__legal {
 		font-size: 0.9em;
 		line-height: 50px;
@@ -271,6 +245,24 @@ h1, h2, h3, p, li, ul, ol {
 			margin: 15px 5px 0 5px;
 		}
 	}
+	&__submit {
+		float: left;
+		position: absolute;
+		background-color: white;
+		color: $dark-green;
+		text-align: center;
+		line-height: 40px;
+		width: calc(100% - 15px);
+		height: 40px;
+		border-radius: 4px;
+		top: 110px;
+		cursor: pointer;
+		&:hover {
+			// opacity: 0.8;
+			background-color: $light-green;
+			color: white;
+		}
+	}
 	&__upload {
 		position: absolute;
 		height: 100%;
@@ -340,8 +332,6 @@ h1, h2, h3, p, li, ul, ol {
 		}
 	}
 }
-
-
 
 
 

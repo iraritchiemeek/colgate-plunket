@@ -1,27 +1,9 @@
 @font-face {
-  font-family: 'Gill Light';
-  src: url("../fonts/GillSanLig.ttf"); }
-@font-face {
-  font-family: 'Gill Bold';
-  src: url("../fonts/GillSanBol.ttf"); }
-@font-face {
   font-family: 'Open Sans Bold';
   src: url("../fonts/OpenSans-Bold.ttf"); }
 @font-face {
   font-family: 'Open Sans Light';
   src: url("../fonts/OpenSans-Light.ttf"); }
-@font-face {
-  font-family: 'Gotham Bold';
-  src: url("../fonts/Gotham-Bold.ttf"); }
-@font-face {
-  font-family: 'Gotham Light';
-  src: url("../fonts/Gotham-Light.ttf"); }
-@font-face {
-  font-family: 'Mank Sans';
-  src: url("../fonts/MankSans.ttf"); }
-@font-face {
-  font-family: 'Mank Sans Medium';
-  src: url("../fonts/MankSans-Medium.ttf"); }
 html, body, header, main, .ng-scope {
   margin: 0 0 0 0;
   width: 100%;
@@ -39,7 +21,8 @@ h1, h2, h3, p, li, ul, ol {
   top: -70px;
   background-color: #0AA600;
   width: 810px;
-  height: 1110px; }
+  height: 1110px;
+  font-family: 'Open Sans Light'; }
 
 .main {
   width: 100%;
@@ -69,7 +52,6 @@ h1, h2, h3, p, li, ul, ol {
     background-position: center;
     background-repeat: no-repeat; }
   .main__info-text {
-    font-family: 'Open Sans Light';
     position: absolute;
     font-size: 1.3em;
     top: 585px;
@@ -85,7 +67,6 @@ h1, h2, h3, p, li, ul, ol {
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.95em;
-    font-family: 'Open Sans Light';
     width: 90%;
     top: 830px; }
     .main__instruction-text--after-submit {
@@ -125,10 +106,9 @@ h1, h2, h3, p, li, ul, ol {
 
 .footer {
   position: absolute;
-  top: 1040px;
+  top: 1050px;
   height: 50px;
-  width: 100%;
-  font-family: 'Open Sans Light'; }
+  width: 100%; }
   .footer__legal {
     font-size: 0.9em;
     line-height: 50px;
@@ -192,6 +172,21 @@ h1, h2, h3, p, li, ul, ol {
     .comp__form input[type="email"] {
       width: calc(100% - 20px);
       margin: 15px 5px 0 5px; }
+  .comp__submit {
+    float: left;
+    position: absolute;
+    background-color: white;
+    color: #0AA600;
+    text-align: center;
+    line-height: 40px;
+    width: calc(100% - 15px);
+    height: 40px;
+    border-radius: 4px;
+    top: 110px;
+    cursor: pointer; }
+    .comp__submit:hover {
+      background-color: #7AC143;
+      color: white; }
   .comp__upload {
     position: absolute;
     height: 100%;
