@@ -74,7 +74,7 @@ h1, h2, h3, p, li, ul, ol {
 	top: -70px;
 	background-color: $dark-green;
 	width: 810px;
-	height: 1110px;
+	height: 1200px;
 	font-family: 'Open Sans Light';
 }
 
@@ -156,8 +156,9 @@ h1, h2, h3, p, li, ul, ol {
 		background-position: center;
 		background-repeat: no-repeat;
 		&--colgate {
+			top: 1095px;
 			width: 430px;
-			height: 200px;
+			height: 135px;
 			background-image: url($img-path + 'logos/colgate.png');
 		}
 		&--plunket {
@@ -171,7 +172,7 @@ h1, h2, h3, p, li, ul, ol {
 
 .footer {
 	position: absolute;
-	top: 1050px;
+	top: 1145px;
 	height: 50px;
 	width: 100%;
 	&__legal {
@@ -257,10 +258,9 @@ h1, h2, h3, p, li, ul, ol {
 		border-radius: 4px;
 		top: 110px;
 		cursor: pointer;
+		font-family: 'Open Sans Bold';
 		&:hover {
-			// opacity: 0.8;
-			background-color: $light-green;
-			color: white;
+			opacity: 0.7;
 		}
 	}
 	&__upload {
