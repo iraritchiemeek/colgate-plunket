@@ -1,0 +1,28 @@
+{
+  "name": "colgate",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "angular-file-upload": "^2.3.3",
+    "body-parser": "1.15.1",
+    "express": "4.13.4",
+    "faker": "^3.1.0",
+    "mongoose": "4.4.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iraritchiemeek/colgate-plunket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iraritchiemeek/colgate-plunket/issues"
+  },
+  "homepage": "https://github.com/iraritchiemeek/colgate-plunket#readme",
+  "description": ""
+}

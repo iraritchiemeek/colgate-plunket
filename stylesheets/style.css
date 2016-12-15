@@ -37,7 +37,7 @@ h1, h2, h3, p, li, ul, ol {
   .main__mid-image {
     background-image: url("../imgs/backgrounds/flowers.png");
     position: absolute;
-    top: 385px;
+    top: 380px;
     height: 120px;
     width: 100%;
     background-size: 100%;
